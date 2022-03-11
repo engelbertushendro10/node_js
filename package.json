@@ -1,0 +1,25 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "rest API node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engelbertushendro10/node_js.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "node",
+    "js"
+  ],
+  "author": "Engelbertus Hendro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engelbertushendro10/node_js/issues"
+  },
+  "homepage": "https://github.com/engelbertushendro10/node_js#readme"
+}
