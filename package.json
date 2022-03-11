@@ -1,25 +1,37 @@
 {
-  "name": "node_js",
-  "version": "1.0.0",
-  "description": "rest API node",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/engelbertushendro10/node_js.git"
-  },
-  "keywords": [
-    "rest",
-    "api",
-    "node",
-    "js"
-  ],
-  "author": "Engelbertus Hendro",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/engelbertushendro10/node_js/issues"
-  },
-  "homepage": "https://github.com/engelbertushendro10/node_js#readme"
+    "name": "node_js",
+    "version": "1.0.0",
+    "description": "rest API node",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./src/server.js",
+        "lint": "eslint ./src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/engelbertushendro10/node_js.git"
+    },
+    "keywords": [
+        "rest",
+        "api",
+        "node",
+        "js"
+    ],
+    "author": "Engelbertus Hendro",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/engelbertushendro10/node_js/issues"
+    },
+    "homepage": "https://github.com/engelbertushendro10/node_js#readme",
+    "dependencies": {
+        "@hapi/hapi": "^20.2.1",
+        "nanoid": "^3.3.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.10.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.25.4",
+        "nodemon": "^2.0.15"
+    }
 }
