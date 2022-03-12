@@ -26,6 +26,7 @@
     "homepage": "https://github.com/engelbertushendro10/node_js#readme",
     "dependencies": {
         "@hapi/hapi": "^20.2.1",
+        "cors": "^2.8.5",
         "nanoid": "^3.3.1"
     },
     "devDependencies": {

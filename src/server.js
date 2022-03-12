@@ -1,3 +1,4 @@
+'use strict';
 const Hapi = require('@hapi/hapi');
 const routes = require('./routes');
 
@@ -8,8 +9,9 @@ const init = async () => {
         routes: {
             cors: {
                 origin: ['*'],
+                additionalHeaders: ['cache-control', 'x-requested-with']
             }
-        },
+        }
     });
 
     server.route(routes);
@@ -19,3 +21,5 @@ const init = async () => {
 };
 
 init()
+
+//http://notesapp-v1.dicodingacademy.com

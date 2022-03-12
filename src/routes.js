@@ -1,14 +1,18 @@
 //const hapi = require('@hapi/hapi');
 
-const { addNoteHandler, getAllHandler } = require('./handler');
+const {
+    addNoteHandler,
+    getAllNotesHandler,
+    getNotesHandlerById,
+    editNotesHandlerByid,
+    hapusNoteHandlerById
+} = require('./handler');
 
 const routes = [
     {
         method: 'GET',
-        path: '/',
-        handler: ()=>({
-            return: 'Hello World!'
-        })
+        path: '/notes',
+        handler: getAllNotesHandler
     },
     {
         method: 'POST',
@@ -17,8 +21,18 @@ const routes = [
     },
     {
         method: 'GET',
-        path: '/notes',
-        handler: getAllHandler
+        path: '/notes/{id}',
+        handler: getNotesHandlerById
+    },
+    {
+        method: 'PUT',
+        path: '/notes/{id}',
+        handler: editNotesHandlerByid
+    },
+    {
+        method: 'DELETE',
+        path: '/notes/{id}',
+        handler: hapusNoteHandlerById
     }
 ]
 
